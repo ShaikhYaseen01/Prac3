@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button{
+            height: 35px;
+            width: 100px;
+            border-radius: 12px;
+            border: 1px solid gray;
+            background-color: rgb(204, 203, 203);
+        }
+        input[type="search"]{
+            padding: 30px 15px;
+            border-radius: 12px;
+            border: 1px solid rgb(204, 203, 203);
+        }
+
+    </style>
 </head>
 <body>
     <p>Practice file</p>
+    <button onclick="handleClick(event)" >Click me </button>
+    <input type="search" name="search" placeholder="serach" >
+
+    <script>
+        function handleClick(e){
+            console.log(e.target.value)
+        }
+    </script>
 </body>
 </html>
